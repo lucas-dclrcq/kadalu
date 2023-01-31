@@ -25,7 +25,7 @@ spec:
           securityContext:
             capabilities: {}
             privileged: true
-          image: {{ include "common.images.image" . }}/kadalu-operator:{{ include "common.version" . }}
+          image: {{ include "common.images.image" . }}/kadalu-operator:0.8.17
           imagePullPolicy: {{ .Values.global.image.pullPolicy }}
           env:
             - name: WATCH_NAMESPACE
