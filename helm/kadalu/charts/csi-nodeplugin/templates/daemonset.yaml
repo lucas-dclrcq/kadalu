@@ -18,7 +18,7 @@ spec:
       serviceAccountName: kadalu-csi-nodeplugin
       containers:
         - name: csi-node-driver-registrar
-          image: docker.io/raspbernetes/csi-node-driver-registrar:2.0.1
+          image: k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.7.0
           args:
             - "--v=5"
             - "--csi-address=$(ADDRESS)"
